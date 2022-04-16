@@ -1,0 +1,24 @@
+Entidades:
+•	Imóveis
+	- id; endereço; número de quartos; área(m2); número de banheiros; se tem garagem; bairro; preço; se tem piscina; se tem área de festa/churrasqueira.
+•	Proprietários
+	- id; nome; cpf/cnpj; telefone; quantidade de imóveis e id.
+•	Contratos_Locação
+	- id; id do imóvel; valor do aluguel; data de início; data de término; vencimento parcela; obs.
+•	Locatários
+	- id; nome; telefone; cpf/cnpj; email; idade.
+-	Pessoas_Interessadas
+	- id; email; telefone; nome.
+Relacionamentos:
+•	Imóveis x Proprietários
+o		Um imóvel pertence a um proprietário
+o		Um proprietário precisa possuir um imóvel e pode possuir vários
+	- Imóveis x Locatário
+		- Contratos_Locação
+		- Um imóvel pode pertencer a vários locatários
+		- Um locatário pode alugar vários imóveis
+	- Imóveis x Pessoas_Interessadas
+		- Uma pessoa pode se interessar por vários imóveis
+		_ Um imóvel pode ter várias pessoas interessadas
+
+
